@@ -85,5 +85,53 @@ document.getElementById('hf-berechnen').addEventListener('click', function() {
     }
 });
 
+// Kilometer in Meilen umrechnen
+document.getElementById('km-meilen-berechnen').addEventListener('click', function() {
+    const kilometer = parseFloat(document.getElementById('kilometer').value);
+    
+    if (kilometer >= 0) {
+        const meilen = kilometer * 0.621371; // 1 Kilometer = 0.621371 Meilen
+        document.getElementById('km-meilen-ergebnis').innerText = `${kilometer} Kilometer sind ${meilen.toFixed(2)} Meilen.`;
+    } else {
+        document.getElementById('km-meilen-ergebnis').innerText = 'Bitte eine gültige Kilometerzahl eingeben.';
+    }
+});
+
+// Meilen in Kilometer umrechnen
+document.getElementById('meilen-km-berechnen').addEventListener('click', function() {
+    const meilen = parseFloat(document.getElementById('meilen').value);
+    
+    if (meilen >= 0) {
+        const kilometer = meilen / 0.621371; // 1 Meile = 1 / 0.621371 Kilometer
+        document.getElementById('meilen-km-ergebnis').innerText = `${meilen} Meilen sind ${kilometer.toFixed(2)} Kilometer.`;
+    } else {
+        document.getElementById('meilen-km-ergebnis').innerText = 'Bitte eine gültige Meilenanzahl eingeben.';
+    }
+});
+
+// Fuß in Höhenmeter umrechnen
+document.getElementById('fuss-hoehenmeter-berechnen').addEventListener('click', function() {
+    const fuss = parseFloat(document.getElementById('fuss').value);
+    
+    if (fuss >= 0) {
+        const hoehenmeter = fuss * 0.3048; // 1 Fuß = 0.3048 Höhenmeter
+        document.getElementById('fuss-hoehenmeter-ergebnis').innerText = `${fuss} Fuß sind ${hoehenmeter.toFixed(2)} Höhenmeter.`;
+    } else {
+        document.getElementById('fuss-hoehenmeter-ergebnis').innerText = 'Bitte eine gültige Fußzahl eingeben.';
+    }
+});
+
+// Höhenmeter in Fuß umrechnen
+document.getElementById('hoehenmeter-fuss-berechnen').addEventListener('click', function() {
+    const hoehenmeter = parseFloat(document.getElementById('hoehenmeter').value);
+    
+    if (hoehenmeter >= 0) {
+        const fuss = hoehenmeter / 0.3048; // 1 Höhenmeter = 1 / 0.3048 Fuß
+        document.getElementById('hoehenmeter-fuss-ergebnis').innerText = `${hoehenmeter} Höhenmeter sind ${fuss.toFixed(2)} Fuß.`;
+    } else {
+        document.getElementById('hoehenmeter-fuss-ergebnis').innerText = 'Bitte eine gültige Höhenmeterzahl eingeben.';
+    }
+});
+
 // Standardmäßig den Pace-Tab öffnen
 openTab('pace');

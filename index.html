@@ -14,7 +14,8 @@
         <button class="tab-button" onclick="openTab('calories')">Kalorienverbrauch</button>
         <button class="tab-button" onclick="openTab('grundumsatz')">Grundumsatz</button>
         <button class="tab-button" onclick="openTab('herzfrequenz')">Herzfrequenzzonen</button>
-        <!-- Weitere Tabs können hier hinzugefügt werden -->
+        <button class="tab-button" onclick="openTab('kilometer-meilen')">Kilometer zu Meilen</button>
+        <button class="tab-button" onclick="openTab('fuss-hoehenmeter')">Fuß zu Höhenmeter</button>
     </div>
 
     <div id="pace" class="tab-content">
@@ -72,6 +73,42 @@
         <button id="hf-berechnen">Herzfrequenzzonen berechnen</button>
         
         <h2 id="hf-ergebnis"></h2>
+    </div>
+
+    <div id="kilometer-meilen" class="tab-content" style="display:none;">
+        <h3>Kilometer zu Meilen</h3>
+        <label for="kilometer">Kilometer:</label>
+        <input type="number" id="kilometer" placeholder="z.B. 5">
+        
+        <button id="km-meilen-berechnen">Umrechnen</button>
+        
+        <h2 id="km-meilen-ergebnis"></h2>
+
+        <h3>Meilen zu Kilometer</h3>
+        <label for="meilen">Meilen:</label>
+        <input type="number" id="meilen" placeholder="z.B. 3">
+        
+        <button id="meilen-km-berechnen">Umrechnen</button>
+        
+        <h2 id="meilen-km-ergebnis"></h2>
+    </div>
+
+    <div id="fuss-hoehenmeter" class="tab-content" style="display:none;">
+        <h3>Fuß zu Höhenmeter</h3>
+        <label for="fuss">Fuß:</label>
+        <input type="number" id="fuss" placeholder="z.B. 1000">
+        
+        <button id="fuss-hoehenmeter-berechnen">Umrechnen</button>
+        
+        <h2 id="fuss-hoehenmeter-ergebnis"></h2>
+
+        <h3>Höhenmeter zu Fuß</h3>
+        <label for="hoehenmeter">Höhenmeter:</label>
+        <input type="number" id="hoehenmeter" placeholder="z.B. 300">
+        
+        <button id="hoehenmeter-fuss-berechnen">Umrechnen</button>
+        
+        <h2 id="hoehenmeter-fuss-ergebnis"></h2>
     </div>
 
     <script src="script.js"></script>
