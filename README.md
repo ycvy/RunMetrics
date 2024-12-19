@@ -1,11 +1,13 @@
 # Läufer Berechnungen
 
-Dieses Projekt bietet nützliche Berechnungen für Läufer, einschließlich der Berechnung der Pace und des Kalorienverbrauchs. Die Anwendung ist in HTML, CSS und Vanilla JavaScript geschrieben.
+Dieses Projekt bietet nützliche Berechnungen für Läufer, einschließlich der Berechnung der Pace, des Kalorienverbrauchs und der Herzfrequenzzonen. Die Anwendung ist in HTML, CSS und Vanilla JavaScript geschrieben.
 
 ## Funktionen
 
 - **Pace Berechnung**: Berechnet die Zeit pro Kilometer basierend auf der Gesamtzeit und der Distanz.
 - **Kalorienverbrauch**: Schätzt die verbrannten Kalorien basierend auf dem Gewicht, der Distanz und der Geschwindigkeit des Läufers.
+- **Grundumsatz**: Berechnet den Grundumsatz (BMR) basierend auf Gewicht, Größe, Alter und Geschlecht.
+- **Herzfrequenzzonen**: Berechnet die Herzfrequenzzonen basierend auf der maximalen Herzfrequenz.
 
 ## Installation
 
@@ -24,7 +26,7 @@ Dieses Projekt bietet nützliche Berechnungen für Läufer, einschließlich der 
 
 ## Verwendung
 
-- Wähle den gewünschten Tab (Pace Berechnung oder Kalorienverbrauch).
+- Wähle den gewünschten Tab (Pace Berechnung, Kalorienverbrauch, Grundumsatz oder Herzfrequenzzonen).
 - Gib die erforderlichen Werte in die Eingabefelder ein.
 - Klicke auf die Schaltfläche "Berechnen", um die Ergebnisse anzuzeigen.
 
