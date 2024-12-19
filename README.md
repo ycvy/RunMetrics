@@ -46,5 +46,5 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE)
 
 ## Mitwirkende
 
-- [Dein Name](https://github.com/DEIN_USERNAME) - Hauptentwickler
+- [ycvy](https://github.com/ycvy) - Hauptentwickler
 
