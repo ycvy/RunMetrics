@@ -12,6 +12,8 @@
     <div class="tabs">
         <button class="tab-button" onclick="openTab('pace')">Pace Berechnung</button>
         <button class="tab-button" onclick="openTab('calories')">Kalorienverbrauch</button>
+        <button class="tab-button" onclick="openTab('grundumsatz')">Grundumsatz</button>
+        <button class="tab-button" onclick="openTab('herzfrequenz')">Herzfrequenzzonen</button>
         <!-- Weitere Tabs können hier hinzugefügt werden -->
     </div>
 
@@ -40,6 +42,36 @@
         <button id="kalorien-berechnen">Kalorien berechnen</button>
         
         <h2 id="kalorien-ergebnis"></h2>
+    </div>
+
+    <div id="grundumsatz" class="tab-content" style="display:none;">
+        <label for="gewicht-bmr">Gewicht (in kg):</label>
+        <input type="number" id="gewicht-bmr" placeholder="z.B. 70">
+        
+        <label for="groesse">Größe (in cm):</label>
+        <input type="number" id="groesse" placeholder="z.B. 175">
+        
+        <label for="alter">Alter (in Jahren):</label>
+        <input type="number" id="alter" placeholder="z.B. 30">
+        
+        <label for="geschlecht">Geschlecht:</label>
+        <select id="geschlecht">
+            <option value="m">Männlich</option>
+            <option value="w">Weiblich</option>
+        </select>
+        
+        <button id="bmr-berechnen">Grundumsatz berechnen</button>
+        
+        <h2 id="bmr-ergebnis"></h2>
+    </div>
+
+    <div id="herzfrequenz" class="tab-content" style="display:none;">
+        <label for="max-hf">Maximale Herzfrequenz (in bpm):</label>
+        <input type="number" id="max-hf" placeholder="z.B. 180">
+        
+        <button id="hf-berechnen">Herzfrequenzzonen berechnen</button>
+        
+        <h2 id="hf-ergebnis"></h2>
     </div>
 
     <script src="script.js"></script>
