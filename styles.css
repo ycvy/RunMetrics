@@ -37,14 +37,17 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #218838;
+    transform: translateY(-2px);
 }
 
 .tab-content {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 5px;
     margin-top: 20px;
@@ -68,6 +71,7 @@ button:hover {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 5px;
+    transition: background-color 0.3s;
 }
 
 .tab-button:hover {
