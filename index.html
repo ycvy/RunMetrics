@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Läufer Berechnungen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Nützliche Berechnungen für Läufer</h1>
+    
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab('pace')">Pace Berechnung</button>
+        <button class="tab-button" onclick="openTab('calories')">Kalorienverbrauch</button>
+        <!-- Weitere Tabs können hier hinzugefügt werden -->
+    </div>
+
+    <div id="pace" class="tab-content">
+        <label for="zeit">Gesamtzeit (in Minuten):</label>
+        <input type="number" id="zeit" placeholder="z.B. 30">
+        
+        <label for="distanz">Distanz (in Kilometern):</label>
+        <input type="number" id="distanz" placeholder="z.B. 5">
+        
+        <button id="berechnen">Berechnen</button>
+        
+        <h2 id="ergebnis"></h2>
+    </div>
+
+    <div id="calories" class="tab-content" style="display:none;">
+        <label for="gewicht">Gewicht (in kg):</label>
+        <input type="number" id="gewicht" placeholder="z.B. 70">
+        
+        <label for="distanz-kalorien">Distanz (in Kilometern):</label>
+        <input type="number" id="distanz-kalorien" placeholder="z.B. 5">
+        
+        <label for="geschwindigkeit">Geschwindigkeit (in km/h):</label>
+        <input type="number" id="geschwindigkeit" placeholder="z.B. 10">
+        
+        <button id="kalorien-berechnen">Kalorien berechnen</button>
+        
+        <h2 id="kalorien-ergebnis"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
