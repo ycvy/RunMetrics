@@ -30,6 +30,10 @@ Dieses Projekt bietet nützliche Berechnungen für Läufer, einschließlich der 
 - Gib die erforderlichen Werte in die Eingabefelder ein.
 - Klicke auf die Schaltfläche "Berechnen", um die Ergebnisse anzuzeigen.
 
+## GitHub Pages
+
+Du kannst die Anwendung auch online unter folgendem Link aufrufen: [GitHub Pages - Läufer Berechnungen](https://ycvy.github.io/RunMetrics/)
+
 ## Technologien
 
 - HTML
@@ -43,3 +47,4 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert. Siehe die [LICENSE](LICENSE)
 ## Mitwirkende
 
 - [Dein Name](https://github.com/DEIN_USERNAME) - Hauptentwickler
+
