@@ -3,6 +3,7 @@ body {
     background-image: url('BGIMG.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 20px;
     color: white;
@@ -10,6 +11,9 @@ body {
 
 h1 {
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 label {
@@ -39,7 +43,14 @@ button:hover {
     background-color: #218838;
 }
 
-#ergebnis {
+.tab-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#ergebnis, #kalorien-ergebnis, #bmr-ergebnis, #hf-ergebnis, #km-meilen-ergebnis, #meilen-km-ergebnis, #fuss-hoehenmeter-ergebnis, #hoehenmeter-fuss-ergebnis {
     margin-top: 20px;
     font-size: 1.2em;
     color: #fff;
@@ -61,10 +72,4 @@ button:hover {
 
 .tab-button:hover {
     background-color: #0056b3;
-}
-
-.tab-content {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 5px;
 }
