@@ -12,6 +12,7 @@ Dieses Projekt bietet nützliche Berechnungen für Läufer, einschließlich der 
 - **Meilen zu Kilometer**: Wandelt Meilen in Kilometer um.
 - **Fuß zu Höhenmeter**: Wandelt Fuß in Höhenmeter um.
 - **Höhenmeter zu Fuß**: Wandelt Höhenmeter in Fuß um.
+- **Rennzeiten umrechnen**: Rechnet mögliche Bestzeiten auf andere Distanzen um.
 
 ## Installation
 
