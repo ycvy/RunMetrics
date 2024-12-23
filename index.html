@@ -16,6 +16,7 @@
         <button class="tab-button" onclick="openTab('herzfrequenz')">Herzfrequenzzonen</button>
         <button class="tab-button" onclick="openTab('kilometer-meilen')">Kilometer zu Meilen</button>
         <button class="tab-button" onclick="openTab('fuss-hoehenmeter')">Fuß zu Höhenmeter</button>
+        <button class="tab-button" onclick="openTab('bestzeit-rechner')">Rennzeiten umrechnen</button>
     </div>
 
     <div id="pace" class="tab-content">
@@ -110,6 +111,22 @@
         
         <h2 id="hoehenmeter-fuss-ergebnis"></h2>
     </div>
+
+    <div id="bestzeit-rechner" class="tab-content">
+        <label for="zeit">Gesamtzeit (in Minuten):</label>
+        <input type="number" id="bestzeit" placeholder="z.B. 30">
+        
+        <label for="distanz">Distanz (in Kilometern):</label>
+        <input type="number" id="bestedistanz" placeholder="z.B. 5">
+
+        
+        <button id="hochrechnen">Laufzeit hochrechnen</button>
+        
+        <p id="bestergebnis">Ergebnisse der Berechnung</p>
+        <p id="5k"></p>
+        <p id="10k"></p>
+        <p id="Halbmarathon"></p>
+        <p id="Marathon"></p>
 
     <script src="script.js"></script>
 </body>

@@ -133,5 +133,46 @@ document.getElementById('hoehenmeter-fuss-berechnen').addEventListener('click', 
     }
 });
 
+document.getElementById('hochrechnen').addEventListener('click', function() {
+    const inputTimeMinutes = parseFloat(document.getElementById('bestzeit').value);
+    const bestedistanz = parseFloat(document.getElementById('bestedistanz').value);
+    // Umrechnungsfaktor basierend auf der Riegel-Formel
+    const exponent = 1.06;
+
+    // Gegebene Zeit in Minuten in Sekunden umrechnen
+    const inputTimeSeconds = inputTimeMinutes * 60;
+
+    if (bestedistanz > 0) {
+        // Funktion zum Berechnen der Zeit für eine neue Distanz
+        const predictTime = (newDistanceKm) => {
+            const scalingFactor = Math.pow(newDistanceKm / bestedistanz, exponent);
+            return inputTimeSeconds * scalingFactor;
+        };
+
+        // Funktion zur Formatierung der Zeit
+        const formatTime = (seconds) => {
+            const h = Math.floor(seconds / 3600);
+            const m = Math.floor((seconds % 3600) / 60);
+            const s = Math.round(seconds % 60);
+            return `${h > 0 ? h + 'h ' : ''}${m}m ${s}s`;
+        };
+
+        // Ergebnisse berechnen und anzeigen
+        const distances = {
+            '5k': 5,
+            '10k': 10,
+            'Halbmarathon': 21.0975,
+            'Marathon': 42.195
+        };
+
+        for (const [key, distance] of Object.entries(distances)) {
+            const predictedTime = predictTime(distance);
+            document.getElementById(key).innerText = `Zeit auf ${distance} km: ${formatTime(predictedTime)}`;
+        }
+    } else {
+        document.getElementById('bestergebnis').innerText = 'Bitte eine gültige Distanz eingeben.';
+    }
+});
+
 // Standardmäßig den Pace-Tab öffnen
 openTab('pace');
