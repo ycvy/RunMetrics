@@ -174,5 +174,32 @@ document.getElementById('hochrechnen').addEventListener('click', function() {
     }
 });
 
+document.getElementById('vo2maxRechnen').addEventListener('click', function() {
+    const vo2inputTimeMinutes = parseFloat(document.getElementById('vo2zeit').value);
+    const vo2distanz = parseFloat(document.getElementById('vo2distanz').value);
+    const vo2gewicht = parseFloat(document.getElementById('gewicht-vo2').value);
+
+    if (isNaN(vo2inputTimeMinutes) || isNaN(vo2distanz) || isNaN(vo2gewicht) || vo2distanz <= 0 || vo2gewicht <= 0) {
+        document.getElementById('vo2max').innerText = 'Bitte gültige Werte für Zeit, Distanz und Gewicht eingeben.';
+        return;
+    }
+
+    const timeSeconds = vo2inputTimeMinutes * 60;
+    const distanceMeters = vo2distanz * 1000;
+
+    // Daniels-Formel für relativen VO₂max
+    const vo2maxRelativ = ((distanceMeters / timeSeconds) - 3.5) / 0.2;
+
+    if (vo2maxRelativ <= 0) {
+        document.getElementById('vo2max').innerText = 'Der berechnete VO₂max-Wert ist unrealistisch. Bitte überprüfe deine Eingaben.';
+        return;
+    }
+
+    // Berechnung des absoluten VO₂max
+    const vo2maxAbsolut = (vo2maxRelativ * vo2gewicht) / 1000; // in l/min
+    document.getElementById('vo2max').innerText = `Dein relativer VO₂max: ${vo2maxRelativ.toFixed(2)} ml/kg/min, absolut: ${vo2maxAbsolut.toFixed(2)} l/min`;
+});
+
+
 // Standardmäßig den Pace-Tab öffnen
 openTab('pace');

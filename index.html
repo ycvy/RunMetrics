@@ -17,6 +17,7 @@
         <button class="tab-button" onclick="openTab('kilometer-meilen')">Kilometer zu Meilen</button>
         <button class="tab-button" onclick="openTab('fuss-hoehenmeter')">Fuß zu Höhenmeter</button>
         <button class="tab-button" onclick="openTab('bestzeit-rechner')">Rennzeiten umrechnen</button>
+        <button class="tab-button" onclick="openTab('vo2max-rechner')">VO2max berechnen</button>
     </div>
 
     <div id="pace" class="tab-content">
@@ -119,6 +120,7 @@
         <label for="distanz">Distanz (in Kilometern):</label>
         <input type="number" id="bestedistanz" placeholder="z.B. 5">
 
+
         
         <button id="hochrechnen">Laufzeit hochrechnen</button>
         
@@ -127,7 +129,21 @@
         <p id="10k"></p>
         <p id="Halbmarathon"></p>
         <p id="Marathon"></p>
+    </div>
 
+    <div id="vo2max-rechner" class="tab-content">
+        <label for="zeit">Gesamtzeit (in Minuten):</label>
+        <input type="number" id="vo2zeit" placeholder="z.B. 30">
+        
+        <label for="distanz">Distanz (in Kilometern):</label>
+        <input type="number" id="vo2distanz" placeholder="z.B. 5">
+
+        <label for="gewicht-vo2">Gewicht (in kg):</label>
+        <input type="number" id="gewicht-vo2" placeholder="z.B. 70">
+        
+        <button id="vo2maxRechnen">VO₂max berechnen</button>
+        <p id="vo2max"></p>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
