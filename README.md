@@ -13,6 +13,7 @@ Dieses Projekt bietet nützliche Berechnungen für Läufer, einschließlich der 
 - **Fuß zu Höhenmeter**: Wandelt Fuß in Höhenmeter um.
 - **Höhenmeter zu Fuß**: Wandelt Höhenmeter in Fuß um.
 - **Rennzeiten umrechnen**: Rechnet mögliche Bestzeiten auf andere Distanzen um.
+- **VO2max berechnen**: Berechnet deine VO2max anhand deiner Bestzeit und deinem Gewicht.
 
 ## Installation
 
