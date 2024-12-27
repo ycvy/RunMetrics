@@ -53,7 +53,7 @@ button:hover {
     margin-top: 20px;
 }
 
-#ergebnis, #kalorien-ergebnis, #bmr-ergebnis, #hf-ergebnis, #km-meilen-ergebnis, #meilen-km-ergebnis, #fuss-hoehenmeter-ergebnis, #hoehenmeter-fuss-ergebnis {
+#ergebnis, #kalorien-ergebnis, #bmr-ergebnis, #hf-ergebnis, #km-meilen-ergebnis, #meilen-km-ergebnis, #bestergebnis, #vo2max {
     margin-top: 20px;
     font-size: 1.2em;
     color: #fff;
